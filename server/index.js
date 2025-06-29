@@ -12,7 +12,7 @@ connectDB();
 
 
 const corsOptions = {
-    origin: "https://chattrixexe.vercel.app", // removed trailing slash
+    origin: process.env.CLIENT_URL, // removed trailing slash
     credentials: true
 };
 app.use(cors(corsOptions));
