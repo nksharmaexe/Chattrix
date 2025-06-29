@@ -18,6 +18,14 @@ app.use(cors({
 app.use(express.json());
 app.use(cookieParser());
 
+// root
+app.get("/",(res,res)=>{
+    res.send({
+        activeStatus:true,
+        message:"Server is running"
+    })
+})
+
 // routes
 import userRoute from "./routes/userRoute.js";
 import messageRoute from "./routes/messageRoute.js";
