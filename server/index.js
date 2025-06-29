@@ -11,10 +11,13 @@ const PORT = process.env.PORT || 8080;
 connectDB();
 
 
-app.use(cors({
-    origin:"https://chattrixexe.vercel.app/",
+const corsOptions = {
+    origin: "https://chattrixexe.vercel.app", // removed trailing slash
     credentials: true
-}))
+};
+app.use(cors(corsOptions));
+app.options("*", cors(corsOptions));
+
 app.use(express.json());
 app.use(cookieParser());
 
