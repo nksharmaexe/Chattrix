@@ -1,0 +1,34 @@
+.typing-container {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.typing-text {
+  font-size: 2.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.word {
+  color: #00d99d;
+  font-weight: bold;
+}
+
+.final {
+  color: #407BFF;
+  font-weight: bold;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  width: 1ch;
+  background-color: #00d99d;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
