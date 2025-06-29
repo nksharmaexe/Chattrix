@@ -12,7 +12,7 @@ connectDB();
 
 
 app.use(cors({
-    origin:[process.env.CLIENT_URL],
+    origin:"https://chattrixexe.vercel.app/",
     credentials: true
 }))
 app.use(express.json());
