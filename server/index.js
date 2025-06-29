@@ -18,6 +18,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 
+
 app.use(express.json());
 app.use(cookieParser());
 
@@ -26,6 +27,7 @@ app.get("/",(req,res)=>{
     res.send({
         activeStatus:true,
         message:"Server is running"
+        
     })
 })
 
